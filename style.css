@@ -27,8 +27,8 @@ body {
 .header {
     padding-top: 16px;
     padding-bottom: 128px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: clamp(16px, 10%, 200px);
+    padding-right: clamp(16px, 10%, 200px);
 }
 
 .header-top {
@@ -36,6 +36,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .header-links {
@@ -77,7 +78,7 @@ body {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-bottom > img {
@@ -85,6 +86,7 @@ body {
     height: 230px;
     background-color: grey;
     flex-grow: 0;
+    margin: 0;
 }
 
 #information-title {
@@ -94,7 +96,7 @@ body {
 
 .quote-container {
     background-color: #E5E7EB;
-    padding: 96px 250px;
+    padding: 96px clamp(16px, 20%, 400px);
 }
 
 .quote-author {
@@ -154,8 +156,8 @@ body {
     gap: 32px;
     margin-bottom: 64px;
     flex-wrap: wrap;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: clamp(16px, 10%, 200px);
+    padding-right: clamp(16px, 10%, 200px);
 }
 
 .image {
@@ -179,13 +181,13 @@ body {
 }
 
 .sign-up-container {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 32px;
+    margin-right: 32px;
     max-width: 1000px;
     display: flex;
     gap: 32px;
     border-radius: 4px;
-    padding: 32px 128px;
+    padding: 32px clamp(16px, 10%, 128px);
     flex-wrap: wrap;
 }
 
